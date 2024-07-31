@@ -1,5 +1,5 @@
-## RANDOM JAVASCRIPT PRCTICE PROJECTS
-This repository contains various JavaScript projects for practice and learning. Each project is organized into its own folder. Below is a list of the projects and brief descriptions of each.
+## RANDOM FRONTEND PROJECTS
+This repository contains various Frontend projects for practice and learning. Each project is organized into its own folder. Below is a list of the projects and brief descriptions of each.
 
 ## PROJECTS
 
@@ -7,6 +7,10 @@ This repository contains various JavaScript projects for practice and learning. 
 - Folder Rock-Paper-Scissiors
 - Description: A simple Rock Paper Scissors game where the player can compete against the computer. The game includes score tracking, and the first to reach 100 points wins. 
 
+2. RECIPE PAGE
+
+- Folder: Recipe Page
+- Description: A simple website created using HTML and CSS that provides a recipe for making an omelette. The page includes Preparation time, ingredients, Insructions, and Nutrition for cooking the perfect omelette. The design is responsive, optimized for both desktop and mobile viewing.
 
 ## TECHNOLOGIES USED
 
@@ -14,8 +18,8 @@ This repository contains various JavaScript projects for practice and learning. 
 - CSS: Styling and layout.
 - JavaScript: Functionality and interaction.
 
-# SCREENSHOT🖼️
-![screenshot](final.png)
+<!-- # SCREENSHOT🖼️
+![screenshot](final.png) -->
 
 ## AUTHOR CONTACT INFORMATION
 For any questions or suggestions, please feel free to reach out to me:
