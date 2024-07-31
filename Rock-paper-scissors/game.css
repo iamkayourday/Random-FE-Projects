@@ -20,10 +20,12 @@ h1 {
     color: black;
 }
 #resultDisplay {
+    color: white;
     padding: 25px;
-    background-color: lightgray;
+    background-image:  linear-gradient(45deg,black,grey);
     border-radius: 10px;
     margin-bottom: 30px;
+    
 }
 
 button {
@@ -42,5 +44,12 @@ button {
 }
 #paper{
     background-image: linear-gradient(90deg,grey, black);
+}
+#scoreDisplay {
+    padding: 25px;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
 }
 

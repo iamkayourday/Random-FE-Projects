@@ -15,8 +15,8 @@ This is a simple web-based Rock-Paper-Scissors game, where a player can compete 
 - **JavaScript**: Game logic, including user interaction and score tracking.
 
 ## Files
-- `index.html`: The main HTML file containing the game layout.
-- `styles.css`: The CSS file for styling the game.
+- `game.html`: The main HTML file containing the game layout.
+- `game.css`: The CSS file for styling the game.
 - `game.js`: The JavaScript file containing the game logic.
 
 ## Game Rules

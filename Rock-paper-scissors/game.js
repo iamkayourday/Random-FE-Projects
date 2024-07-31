@@ -3,9 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const paper = document.getElementById('paper');
     const scissors = document.getElementById('scissors');
     const resultDisplay = document.getElementById('resultDisplay');
+    const scoreDisplay = document.getElementById('scoreDisplay');
 
 
-    const playPrompt = confirm("Do you want to Play the game?");
+    const playPrompt = confirm("Play Game?");
     const playerName = prompt(`Type a username of your choice`);
 
     if (playPrompt === false) {
@@ -32,20 +33,56 @@ function play () {
 
     if (playerChoice == computerChoice) {
         resultDisplay.textContent = `Tie You both choose ${playerChoice}`
+        resultDisplay.style.backgroundColor = 'lightGray';
     } else if (playerChoice === 'Rock' && computerChoice === 'Paper') {
         resultDisplay.textContent = `Computer won this round`
+        resultDisplay.style.backgroundColor = 'black';
+        computerScore += 10;
+
     } else if (playerChoice === 'Rock' && computerChoice === 'Scissors') {
-        resultDisplay.textContent = `${playerName} won this round`
+        resultDisplay.textContent = `You won this round`
+        resultDisplay.style.backgroundColor = 'grey';
+        playerScore += 10;
+
     } else if (playerChoice === 'Paper' && computerChoice === 'Rock') {
-        resultDisplay.textContent = `${playerName} won this round`
+        resultDisplay.textContent = `You won this round`
+        resultDisplay.style.backgroundColor = 'grey';
+        playerScore += 10;
+
     } else if (playerChoice === 'Paper' && computerChoice === 'Scissors') {
-        resultDisplay.textContent = `Oops Computer won this round`
+        resultDisplay.textContent = `Computer won this round`
+        resultDisplay.style.backgroundColor = 'black';
+        computerScore += 10;
+
     } else if (playerChoice === 'Scissors' && computerChoice === 'Rock') {
-        resultDisplay.textContent = `Oops Computer won this round`
+        resultDisplay.textContent = `Computer won this round`
+        resultDisplay.style.backgroundColor = 'black';
+       computerScore += 10;
+
     } else if (playerChoice === 'Scissors' && computerChoice === 'Paper') {
-        resultDisplay.textContent = `${playerName} won this round`
+        resultDisplay.textContent = `You won this round`
+        resultDisplay.style.backgroundColor = 'grey';
+        playerScore += 10;
     } 
+    scoreDisplay.textContent = `${playerName}: ${playerScore} - Computer: ${computerScore}`
+    console.log(playerScore, computerScore);
+
+    if (playerScore >= 100 || computerScore >= 100) {
+        if (playerScore > computerScore) {
+            scoreDisplay.textContent = `${playerName} wins the game with ${playerScore - computerScore} points!`;
+            scoreDisplay.style.backgroundColor = "green"
+        } else {
+            scoreDisplay.textContent = `Computer wins the game with ${computerScore - playerScore} points!`;
+            scoreDisplay.style.backgroundColor = 'red';
+        }
+    
+        // Disable buttons to stop the game
+        rock.disabled = true;
+        paper.disabled = true;
+        scissors.disabled = true;
+    }
 }
+
 rock.addEventListener('click', () => {
     playerChoice = 'Rock';
     play();
@@ -57,11 +94,5 @@ paper.addEventListener('click', () => {
 scissors.addEventListener('click', () => {
     playerChoice = 'Scissors';
     play();
-})
-
 });
-
-
-
-
-
+});
