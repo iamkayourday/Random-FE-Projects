@@ -12,6 +12,11 @@ This repository contains various Frontend projects for practice and learning. Ea
 - Folder: Recipe Page
 - Description: A simple website created using HTML and CSS that provides a recipe for making an omelette. The page includes Preparation time, ingredients, Insructions, and Nutrition for cooking the perfect omelette. The design is responsive, optimized for both desktop and mobile viewing.
 
+3. SOCIAL MEDIA PROFILE
+
+- Folder: Social-links-profile
+- Description: A simple landing page that aggregates all my social media and professional profiles in one place. It's a convenient way to share my online presence with others, showcasing my professional and personal interests across various platforms.
+
 ## TECHNOLOGIES USED
 
 - HTML: Structure and content of the web application.
