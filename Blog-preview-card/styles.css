@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    border: 0;
+    font-family: Figtree;
+}
+body {
+    background-color:#F5D04E;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#container {
+    max-width: 280px;
+    background-color: white;
+    padding: 15px 25px 15px 15px;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 4px rgba(0,0,0,5);    */
+    box-shadow: 8px 8px 0 black;
+}
+#headerImg {
+    width: 290px;
+    border-radius: 4px;
+    padding-bottom: 15px;
+}
+#learn {
+    padding: 12px 40px;
+    background-color: #F8D14F;
+    border-radius: 5px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+p{
+    text-align: left;
+    margin: 10px 0 10px;
+}
+h1{
+    text-align: left;
+}
+#publisher p {
+    margin: 20px 0 0 20px;
+}
+#publisher {
+    display: flex;
+    justify-content: flex-start;
+}
