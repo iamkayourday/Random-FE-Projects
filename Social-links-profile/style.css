@@ -50,3 +50,13 @@ a {
     text-decoration: none;
     border-radius: 5px;   
 }
+/* MOBILE */
+@media (min-width: 375px) and (max-width: 767px) {
+    body{
+        width: 375px;
+        height: auto;
+    }
+    #mainContainer {
+        width: 280px;
+    }
+}
