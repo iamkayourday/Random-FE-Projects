@@ -101,7 +101,7 @@ th, td {
     border-bottom: 1px solid lightgrey;
 }
 /* MOBILE DESIGN */
-@media (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 767px) {
     body{
         background-color: white;
         height: auto;
